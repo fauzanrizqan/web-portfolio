@@ -12,7 +12,7 @@ function Ball() {
   };
 
   // Store each ball's initial color and position
-  const initialPositions = [...Array(22)].map(() => ({
+  const initialPositions = [...Array(32)].map(() => ({
     color: generateRandomColor(),
     top: `${Math.floor(Math.random() * 100)}vh`,
   }));

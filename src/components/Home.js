@@ -13,14 +13,16 @@ function Home() {
   };
   return (
     <div id="home" className="home">
+      <div className="home-content">
       <h1>Hi, I'm Fauzan Rizqan!</h1>
       <div className="location">
         <FaMapMarkerAlt className="location-icon" />
-        <span>  Canberra, Australia</span>
+        <span>Canberra, Australia</span>
         <button onClick={scrollToAbout} className="see-more-button">
         See More
         <FaChevronDown className="down-arrow-icon" />
       </button>
+      </div>
       </div>
     </div>
   );
