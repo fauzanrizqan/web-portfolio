@@ -1,0 +1,55 @@
+/* src/components/NavBar.css */
+
+/* src/components/NavBar.css */
+
+.navbar-custom {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: rgb(38, 38, 61);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hide-nav {
+  opacity: 0;
+  transform: translateY(-100%);
+  display: block; /* Ensure it takes up space but is invisible */
+  pointer-events: none; /* Disable interactions when hidden */
+}
+
+
+
+/* src/components/NavBar.css */
+
+
+
+
+.navbar-custom .navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #2a3ce2;; /* Change color to cyan on hover */
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  margin-left: 1.5rem; /* Add space between links */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #2a3ce2; /* Teal color on hover for links */
+}
+
+.navbar-custom .me-auto {
+  margin-left: auto; /* Align links to the right */
+}

@@ -1,0 +1,12 @@
+/* src/components/About.css */
+
+.about {
+  height: 100vh; /* Makes About section span full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,34 @@
+/* src/components/Ball.css */
+
+.ball-container {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-color: #06021d;
+}
+
+.animated-ball {
+  position: absolute;
+  left: -10%; /* Start slightly off-screen on the left */
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer; /* Show pointer on hover */
+  animation: moveRight 10s linear infinite;
+  animation-duration: calc(70s / var(--i)); /* Adjust speed using --i */
+  box-shadow:
+    0 0 0.8rem 0.5rem rgba(190, 104, 224, 0.1),
+    0 0 0.7rem 0.9rem rgba(39, 43, 247, 0.144);
+}
+
+/* Keyframes for horizontal movement */
+@keyframes moveRight {
+  0% {
+    transform: translateX(0); /* Starting from the left */
+  }
+  100% {
+    transform: translateX(110vw); /* Move to the right off-screen */
+  }
+}
