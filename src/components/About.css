@@ -9,4 +9,5 @@
   padding: 20px;
   color: white;
   text-align: center;
+  z-index: 2; /* Ensures content is above the animated ball */
 }

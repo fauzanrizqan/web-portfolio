@@ -16,7 +16,7 @@ function App() {
       
       {/* Content Sections */}
       <div className="content">
-        {/* <NavBar /> */}
+      <NavBar />
         <Home />
         <About />
         <Projects />

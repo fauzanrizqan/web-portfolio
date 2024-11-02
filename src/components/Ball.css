@@ -5,7 +5,7 @@
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  background-image: url('C:/ANU/web-portfolio/test-bootstrap/src/components/use-svg-as-background-image-particle-strokes.svg');
+  /* background-image: url('C:/ANU/web-portfolio/test-bootstrap/src/components/use-svg-as-background-image-particle-strokes.svg'); */
   z-index: 1;
   
 }
@@ -13,13 +13,13 @@
 .animated-ball {
   position: absolute;
   left: -10%; /* Start slightly off-screen on the left */
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 50%;
   margin: 10px;
   cursor: pointer; /* Show pointer on hover */
   animation: moveRight 10s linear infinite;
-  animation-duration: calc(180s / var(--i)); /* Adjust speed using --i */
+  animation-duration: calc(200s / var(--i)); /* Adjust speed using --i */
   box-shadow:
     0 0 0.8rem 0.5rem rgba(190, 104, 224, 0.1),
     0 0 0.7rem 0.9rem rgba(39, 43, 247, 0.144);
