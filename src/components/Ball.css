@@ -21,8 +21,8 @@
   animation: moveRight 10s linear infinite;
   animation-duration: calc(200s / var(--i)); /* Adjust speed using --i */
   box-shadow:
-    0 0 0.8rem 0.5rem rgba(190, 104, 224, 0.1),
-    0 0 0.7rem 0.9rem rgba(39, 43, 247, 0.144);
+    0 0 0.8rem 0.5rem rgba(107, 98, 228, 0.1),
+    0 0 0.7rem 0.9rem rgba(39, 13, 153, 0.151);
   opacity: 0.6;
   cursor: pointer;
 }
