@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <Navbar sticky= "top" expand="md" className="navbar-custom">
       <Container>
-        <Navbar.Brand href="#home">fauzanrizqan()</Navbar.Brand>
+        <Navbar.Brand href="#home">fauzanrizqan.com</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

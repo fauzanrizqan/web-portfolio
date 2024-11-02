@@ -2,7 +2,7 @@
 
 .about {
   font-family: 'IBM Plex Mono', monospace;
-  height: 100vh;
+  height: 100vh; /* Makes About section span full viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,25 +10,26 @@
   padding: 20px;
   color: white;
   text-align: center;
-  z-index: 3;
 }
 
 .about-content {
   display: flex;
-  flex-direction: row; /* Change to row for side-by-side layout */
-  align-items: center; /* Centers the content vertically */
-  justify-content: space-between; /* Distributes space around items */
+  flex-direction: row; /* Side-by-side layout */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
   background-color: rgb(60, 61, 55);
-  width: 80%;
-  height: 70vh;
-  z-index: 3;
+  width: 80%; /* Adjustable based on your preference */
+  min-height: 70vh; /* Minimum height to ensure content fits */
   border-radius: 0.5rem;
-  padding: 20px; /* Add padding inside the container */
+  position: relative; /* Set position context for absolute elements */
+  overflow: hidden; /* Hides anything outside the bounds */
+  padding: 20px; /* Padding inside the container */
+  z-index: 3;
 }
 
 .about-text {
-  flex: 1; /* Takes up half of the container */
-  padding-right: 3rem; /* Adds spacing between text and image */
+  width: 60%; /* Adjusted for text space */
+  padding-right: 3rem; /* Space between text and images */
 }
 
 .about-text h2 {
@@ -38,28 +39,56 @@
 }
 
 .about-text p {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   margin-bottom: 1.2rem;
 }
 
-.about-image {
-  width: 34%; /* Control the width of the image */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 0.5rem; /* Optional: rounded corners for the image */
-  margin-right: 4.8rem;
+.about-images {
+  width: 40%; /* Adjusted for image space */
+  display: flex;
+  justify-content: space-around; /* Space out images */
+  
 }
 
-/* Responsive design adjustments for smaller screens */
+.about-image {
+  width: calc(50% - 10px); /* Calculate width minus the gap */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* Shadow for depth */
+  border: white;
+}
+
+.about-image.one {
+  position: absolute;
+  top: 9.5rem;
+  right: 5.5rem;
+  width: 23%; /* Adjusted for image space */
+  transform: rotate(10deg); /* Tilted slightly */
+  border: 5px solid white;
+}
+
+.about-image.two {
+  position: absolute;
+  top: 6.2rem;
+  right: 15.3rem;
+  width: 21%; /* Adjusted for image space */
+  transform: rotate(-24deg); /* Tilted slightly */
+  border: 5px solid white;
+}
+
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    text-align: center;
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: center; /* Center alignment */
   }
 
-  .about-text,
+  .about-text, .about-images {
+    width: 100%; /* Full width on smaller screens */
+  }
+
   .about-image {
-    width: 100%; /* Full width for both text and image on small screens */
-    padding: 10px 0; /* Add vertical padding */
+    width: 70%; /* Larger to fill space */
+    margin: 10px 0; /* Space above and below */
   }
 }
