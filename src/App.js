@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Ball from './components/Ball';
+import Timeline from './components/Timeline';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <NavBar />
         <Home />
         <About />
+        <Timeline />
         <Projects />
         <Contact />
       </div>

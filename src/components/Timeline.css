@@ -1,0 +1,8 @@
+
+.timeline{
+    font-family: 'IBM Plex Mono', monospace;
+}
+.date {
+    color: white !important; /* Ensures the date color is white, overriding default styles */
+}
+

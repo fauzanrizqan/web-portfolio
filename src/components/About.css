@@ -14,22 +14,22 @@
 
 .about-content {
   display: flex;
-  flex-direction: row; /* Side-by-side layout */
-  align-items: center; /* Vertically center content */
+  flex-direction: row; /* Side-by-side layout if space permits */
+  align-items: flex-start; /* Align items at the start of the container vertically */
   justify-content: center; /* Horizontally center content */
-  background-color: rgb(60, 61, 55, 0.5);
-  width: 80%; /* Adjustable based on your preference */
-  min-height: 70vh; /* Minimum height to ensure content fits */
+  background-color: rgba(60, 61, 55, 0.8); /* Transparency added */
+  width: 80%;
+  min-height: 67vh;
   border-radius: 0.5rem;
-  position: relative; /* Set position context for absolute elements */
-  overflow: hidden; /* Hides anything outside the bounds */
-  padding: 20px; /* Padding inside the container */
-  padding-bottom: 0px; /* Additional padding at the bottom */
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
   z-index: 3;
 }
 
 .about-text {
-  width: 60%; /* Adjusted for text space */
+  width: 60%;
+  align-self: start; /* Ensures the text section aligns at the top */
   padding-right: 3rem; /* Space between text and images */
 }
 
@@ -41,9 +41,10 @@
 }
 
 .about-text p {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 1.2;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  text-align: justify;
 }
 
 .about-images {
@@ -63,21 +64,47 @@
 
 .about-image.one {
   position: absolute;
-  top: 9.5rem;
+  top: 8.1rem;
   right: 5.5rem;
   width: 23%; /* Adjusted for image space */
   transform: rotate(10deg); /* Tilted slightly */
   border: 5px solid white;
+  z-index: 3;
 }
 
 .about-image.two {
   position: absolute;
-  top: 6.2rem;
+  top: 4.8rem;
   right: 15.3rem;
   width: 21%; /* Adjusted for image space */
   transform: rotate(-24deg); /* Tilted slightly */
   border: 5px solid white;
+  z-index: 2;
 }
+.rotate-arrow {
+  display: inline-block;
+  transform: rotate(90deg); /* Rotate arrow to the right */
+  margin-left: 5px;
+}
+
+.next-photo{
+  position: absolute;
+  bottom: 4.1rem;
+}
+
+.next-photo button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+
 
 @media (max-width: 768px) {
   .about-content {
@@ -114,11 +141,11 @@
 }
 
 .social-media {
+  position: absolute; /* Absolutely position this div */
+  bottom: 20px; /* Position it 20px from the bottom */
+  left: 20px; /* Position it 20px from the left */
   display: flex;
-  justify-content: left;
-  align-items: left;
   gap: 20px; /* Space between icons */
-  margin-top: 2rem;
 }
 
 .social-media a {
