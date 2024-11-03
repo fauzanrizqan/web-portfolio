@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Ball from './components/Ball';
 import Timeline from './components/Timeline';
+import Skills from './components/Skills';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Home />
         <About />
         <Timeline />
+        <Skills />
         <Projects />
         <Contact />
       </div>

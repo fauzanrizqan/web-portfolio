@@ -1,0 +1,70 @@
+/* src/components/Skills.css */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 3.5rem;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.skills-container h2{
+    font-size: 2.5rem;
+}
+
+.skills-container h3 {
+    margin: 2rem auto; /* Center the title horizontally and maintain margin */
+    font-size: 1.5rem;
+    background-color: rgba(95, 97, 88, 0.822);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem; /* Adjust padding around text for tighter fit */
+    text-align: center; /* Center text within the background */
+}
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 2rem;
+    background-color: rgba(81, 81, 83, 0.842);
+    padding: 0.55rem;
+    border-radius: 0.9rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.skill:hover {
+    transform: scale(1.1); /* Enlarge the item */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Increase the box-shadow to give the effect of an enlarging border */
+}
+
+
+
+
+.skill-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.skill-popup button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
