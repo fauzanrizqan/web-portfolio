@@ -1,0 +1,24 @@
+* {
+    z-index: 1000000;
+}
+
+.html-flip-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set to the height you prefer */
+  }
+  
+  /* Styles for the individual pages within the flipbook */
+  .demoPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width usage */
+    height: 100%; /* Use full height available */
+    color: white;
+    background-color: orange;
+    text-align: center;
+    padding: 20px;
+  }
