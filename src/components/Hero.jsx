@@ -1,10 +1,12 @@
 import { HiMapPin, HiArrowRight } from 'react-icons/hi2';
 import { profile, links } from '../data/site.js';
+import Strings from './Strings.jsx';
 
 export default function Hero() {
   return (
     <section id="top" className="hero">
-      <div className="container hero-inner">
+      <div className="container hero-grid">
+      <div className="hero-inner">
         {profile.available && (
           <p className="badge">
             <span className="dot" /> Available for new projects
@@ -27,6 +29,8 @@ export default function Hero() {
         <p className="hero-location">
           <HiMapPin /> {profile.location} · working with clients worldwide
         </p>
+      </div>
+      <Strings />
       </div>
     </section>
   );
