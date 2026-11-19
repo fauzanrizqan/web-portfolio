@@ -12,7 +12,7 @@ export const profile = {
   headline: 'I build AI features and web apps that ship.',
   intro:
     'From computer vision and NLP models to the web and mobile apps that put them in front of users, I take ideas from prototype to production.',
-  location: 'Canberra, Australia',
+  location: 'Jakarta, Indonesia',
   // Set to false to hide the "Available for new projects" badge.
   available: true,
 };
@@ -38,7 +38,7 @@ export const proof = [
   { value: '3.74 / 4.00', label: 'GPA, Computer Science (UI)' },
   { value: 'ANU', label: "Chancellor's International Scholarship" },
   { value: '180+', label: 'students taught as a TA' },
-  { value: '2', label: 'degrees: ANU & University of Indonesia' },
+  { value: 'Data Scientist', label: 'at DKatalis, building LLM & risk models' },
 ];
 
 export const services = [
@@ -107,7 +107,7 @@ export const projects = [
 export const about = {
   paragraphs: [
     "I'm a Computer Science and Advanced Computing (Honours) graduate from the University of Indonesia and the Australian National University, specialising in machine learning.",
-    'I work across the stack: training and evaluating models, then building the APIs and interfaces that make them useful. I care about clear communication, honest metrics and code that the next person can maintain.',
+    'Today I work as a Data Scientist at DKatalis, building LLM applications and credit risk models for financial services. I work across the stack: training and evaluating models, then building the APIs and interfaces that make them useful. I care about clear communication, honest metrics and code that the next person can maintain.',
     "Outside of work I'm a guitarist who records covers, and a sneaker enthusiast.",
   ],
 };
@@ -115,8 +115,15 @@ export const about = {
 // Most recent first.
 export const experience = [
   {
+    type: 'work',
+    period: 'Apr 2025 – Present',
+    title: 'Data Scientist',
+    org: 'DKatalis, Jakarta',
+    text: 'Building AI-driven solutions for financial services, including LLM applications for document processing, regulatory analysis and intelligent information retrieval, plus credit risk models, predictive analytics and data-driven decision systems for compliance and risk management.',
+  },
+  {
     type: 'education',
-    period: '2022 – 2024',
+    period: 'Jul 2022 – Dec 2024',
     title: 'Bachelor of Advanced Computing (Honours), Machine Learning',
     org: 'Australian National University, Canberra',
     text: "Awarded the ANU Chancellor's International Scholarship for academic excellence.",
@@ -130,7 +137,7 @@ export const experience = [
   },
   {
     type: 'education',
-    period: '2020 – 2024',
+    period: 'Aug 2020 – Dec 2024',
     title: 'Bachelor of Computer Science (2+2 double degree with ANU)',
     org: 'University of Indonesia, Depok',
     text: 'Graduated with a GPA of 3.74 / 4.00.',
